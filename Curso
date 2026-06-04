@@ -1,0 +1,10 @@
+class Curso {
+    constructor(
+        public codigo: string,
+        public asignatura: string,
+        public aula: string,
+        public cupos: number
+    ) 
+}
+
+    
