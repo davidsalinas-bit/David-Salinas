@@ -1,0 +1,26 @@
+class Tarea {
+    constructor(
+        public id: number,
+        public descripcion: string,
+        public completada: boolean,
+        public prioridad: "Alta" | "Media" | "Baja"
+    ) {}
+
+    obtenerResumen(): { id: number; descripcion: string; completada: boolean; prioridad: string } {
+        return {
+            id: this.id,
+            descripcion: this.descripcion,
+            completada: this.completada,
+            prioridad: this.prioridad
+        };
+    }
+
+    mostrar(): void {
+        const estado = this.completada ? "✅ Completada" : "❌ Pendiente";
+        console.log(`[${this.prioridad}] Tarea #${this.id}: ${this.descripcion} - Estado: ${estado}`);
+    }
+}
+
+const tarea1 = new Tarea(1, "Optimizar índices de base de datos PostgreSQL", false, "Alta");
+tarea1.mostrar();
+console.log(tarea1.obtenerResumen());
