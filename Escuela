@@ -1,0 +1,21 @@
+class Escuela {
+    constructor(
+        public id: string,
+        public nombre: string,
+        public direccion: string,
+        public telefono: string
+    ) {}
+
+    obtenerInformacion(): { id: string; nombre: string; direccion: string; telefono: string } {
+        return {
+            id: this.id,
+            nombre: this.nombre,
+            direccion: this.direccion,
+            telefono: this.telefono
+        };
+    }
+
+    mostrar(): void {
+        console.log(`Escuela: ${this.nombre} | Dirección: ${this.direccion} | Telf: ${this.telefono}`);
+    }
+}
