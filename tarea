@@ -16,7 +16,7 @@ class Tarea {
     }
 
     mostrar(): void {
-        const estado = this.completada ? "✅ Completada" : "❌ Pendiente";
+        const estado = this.completada ? "Completada" : "Pendiente";
         console.log(`[${this.prioridad}] Tarea #${this.id}: ${this.descripcion} - Estado: ${estado}`);
     }
 }
