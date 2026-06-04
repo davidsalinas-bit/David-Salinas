@@ -1,0 +1,21 @@
+class Profesor {
+    constructor(
+        public cedula: string,
+        public nombre: string,
+        public apellido: string,
+        public especialidad: string
+    ) {}
+
+    obtenerPerfil(): { cedula: string; nombre: string; apellido: string; especialidad: string } {
+        return {
+            cedula: this.cedula,
+            nombre: this.nombre,
+            apellido: this.apellido,
+            especialidad: this.especialidad
+        };
+    }
+
+    mostrar(): void {
+        console.log(`Profesor: ${this.nombre} ${this.apellido} | Especialidad: ${this.especialidad}`);
+    }
+}
