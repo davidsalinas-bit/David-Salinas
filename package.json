@@ -1,0 +1,16 @@
+{
+  "name": "geometric-areas",
+  "version": "1.0.0",
+  "description": "Proyecto en TypeScript para calcular el área de figuras geométricas usando POO.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
+  "keywords": ["typescript", "poo", "geometry"],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
